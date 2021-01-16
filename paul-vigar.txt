@@ -1,0 +1,107 @@
+Codepen: https://codepen.io/PVigar88/pen/ZEpmNpJ
+
+1. What is Semantic HTML? 
+    semantic elements describe their meaning to both the developer and the webpage itself. 
+2. What is HTML used for? 
+    it is used to create the structure of a webpage, offering a framework for the content that is to be displayed. 
+3. What is an attribute and where do we put it? 
+    an attribute provides additional information for an element 
+4. What is the h1 tag used for? How many times should I use it on a page?
+    header 1. the largest/most important header. should only be used once. 
+5. Name two tags that have required attributes
+    <a> <img>
+6. What do we put in the head of our HTML document? 
+    meta data- detaila bout the page that won't be displayed as part of its content
+7. What is an id? 
+    attribute that provides a unique identifier for the selected html element. 
+8. What elements can I add an id to? 
+    any html element
+9. How many times can I use the same id on a page? 
+    one
+10. What is a class? 
+    a class is an identifier that can be applied to multiple elements allowing you to group them together.
+11. What elements can I add a class to? 
+    any html element
+12. How many times can I use the same class on a page? 
+    classes have no limit of use.  if you really wanted you could assign to every tag.
+13. How do I get my link to open in a new tab?
+    <a href="wwwtargeturl.com" target="_blank">click here to open in a new page</a>
+14. What is the alt attribute in the image tag used for? 
+    it displays alternate text, usually for screen readers and in the case where an image may not load for whatever reason. 
+15. How do I reference an id?
+    #idName
+16. What is the difference between a section and a div
+    section is a semantic tag, div is not
+17. What is CSS used for? 
+    changing the appearance of the content displayed.
+18. How to we select an element? Example - every h2 on the page
+    h2{insert css attributes here}
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+classes can be used multiple times within a page, id's should be unique. 
+    if you had multiple sub-headers that you wanted to have the same css you might give them all the same "subheader" class. 
+    meanwhile if you want each section of a page to have different css you'd give id's to the sections
+20. How do we select classes in CSS?
+    .className{ insert css attributes here}
+21. How do we select a p element with a single class of “human””?
+    .human{}
+22. What is a parent child selector? When would this be useful? 
+    only selects elements of the selected child that exist within the selected parent. its useful when you want to change css for specific elements that are nested. 
+23. How do you select all links within a div with the class of sidebar?
+    .sidebar a {}
+24. What is a pseudo selector?
+    a pseudo selector can select an element that is in a specific state.  
+25. What do we use the change the spacing between lines?
+    line-height attribute
+26. What do we use to change the spacing between letters?
+    leatter-spacing attribute
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase (for all caps), lowercase (for all lower), capitalize for all 
+28. How do I add a 1px border around my div that is dotted and black?
+    div{
+        boder:1px black;
+    }
+29. How do I select everything on the page? 
+    * selects all 
+30. How do I write a comment in CSS?
+    /* comments go between */
+31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm 'filename' you need to be careful because this is permanant, no recovery
+34. Why should I use version control? 
+    helps track changes so you can roll back to a working version if something goes wrong. also identifies who makes what changes when collaborating.
+35. How often should I commit to github?
+    as often as you make changes, and include meaningful comments. 
+    The more you commit the more backup points you have should you need to go back to a previous version. 
+36. What is the command we would use to push our repo up to github? 
+    git push origin 
+37. Walk me through Lambda's git flow. 
+    Step 1 - Fork from the master on github
+    Step 2- Collaborate by adding your PM as a collaborator
+    Step 3 - Clone the repo
+    Step 4 - Branch your clone so you aren't working on your master
+    Step 5.1 - Sumbit Pull request using your local branch master to compare across branches.
+    Step 5.2 - Submit Pull Request to Github with your PM as a collaborator.
+    Step 6 (PM only) - review and accept merge requests. 
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+    Inline elements do not start a new line and have width's that are dependant on internal contents
+    Block elements start a new line and have full width available as defined by their parent's width.
+2. What happens when an element is positioned absolutely? 
+    an absolutely positioned element won't move when the window is resized. 
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+    make it display inline
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    Block
+        div, h1, page
+    inline  
+        span, a, img
+    inline-block
+        button
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    The Box Model is the term for box that exists around content in html.  Margins, Border, and padding make up the layers that exist around any content displayed 
+    on a web page.  box-sizing: border-box is a "solution" that incorporates padding and borders into the width although margins are still separate.
